@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner input = new Scanner();
+        Scanner input = new Scanner(System.in);
 
 	System.out.println("Enter first number, operator and 2nd number");
 	System.out.println("exp: 9 * 8");
@@ -14,7 +14,7 @@ public class Calculator {
         switch(op) {
 	    case '+':
 		result = num1 + num2;
-		breakl;
+		break;
 	    case '-':
 		result = num1 - num2;
 		break;
@@ -29,6 +29,6 @@ public class Calculator {
 		return;
 	}
 
-
+	System.out.println("output = " + result);
     }
 }
