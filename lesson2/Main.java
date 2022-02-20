@@ -12,6 +12,14 @@ public class Main {
 
 		std1.printStudentInfo();
 		std1.printStudentInfo();
+		System.out.println("\n\n");
+
+		Lab ApLab = new Lab("MrSmith", "Monday", 30);
+		ApLab.enrollStudent(std1);
+		ApLab.enrollStudent(std2);
+
+
+		ApLab.printLabInfo();
 
 
 	}
