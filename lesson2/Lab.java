@@ -89,6 +89,8 @@ public class Lab {
 			students[currentSize] = student;
 			currentSize++;
 			calAvg();
+		} else {
+			System.out.println("Your can't add students anymore!");
 		}
 	}
 
