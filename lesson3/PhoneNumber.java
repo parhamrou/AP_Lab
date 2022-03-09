@@ -6,7 +6,7 @@ public class PhoneNumber {
 
     public PhoneNumber(String countryCode, String number) {
         this.countryCode = countryCode;
-        if (number.length() == 12) {
+        if (number.length() == 10) {
             this.number = number;
         } else {
             System.out.println("Your number is invalid!");
