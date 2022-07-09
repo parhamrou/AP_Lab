@@ -27,7 +27,7 @@ public class Client {
             while (true) {
                 message = reader.readLine();
                 if (message.equals("#exit")) {
-                    System.out.println(ANSI_RED + "You left the chat!" + ANSI_RESET);
+                    System.out.println(ANSI_RED + "You left from the chat!" + ANSI_RESET);
                     socket.close();
                     break;
                 }
@@ -58,7 +58,6 @@ public class Client {
     
 
     public void start() {
-        
         Thread reader = new Thread(new Runnable() {
             @Override
             public void run() {
